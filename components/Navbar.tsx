@@ -25,9 +25,9 @@ export default async function Navbar() {
                     )}
                 </div>
                 <div className="flex items-center justify-center self-center">   
-                    <Button className='p-4 m-2' ><Link href="/">Home</Link></Button>
-                    <Button className='p-4 m-2'><Link href="/photos">Photos</Link></Button>      
-                    <Button className='p-4 m-2'><Link href="/about">About</Link></Button>      
+                    <Button className='p-4 m-2' variant={"ghost"}><Link href="/">Home</Link></Button>
+                    <Button className='p-4 m-2' variant={"ghost"}><Link href="/photos">Photos</Link></Button>      
+                    <Button className='p-4 m-2' variant={"ghost"}><Link href="/about">About</Link></Button>      
                 </div>
                 <div className='flex justify-equally'>
                     {session?.user ? (
