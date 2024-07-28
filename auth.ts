@@ -1,6 +1,6 @@
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
-import bcrypt from "bcryptjs"
+import bcrypt from "bcryptjs";
 import { sql } from "@vercel/postgres";
 import discord from "next-auth/providers/discord";
 import facebook from "next-auth/providers/facebook";
