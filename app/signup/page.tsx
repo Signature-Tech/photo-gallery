@@ -6,8 +6,8 @@ export default async function CardWithForm() {
 
     const session = await auth()
 
-    if (session) {
-        return NextResponse.redirect("/")
+    if (session?.user) {
+        return NextResponse.redirect("/");
     }
 
     return (
