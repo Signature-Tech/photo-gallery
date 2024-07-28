@@ -6,7 +6,6 @@ import discord from "next-auth/providers/discord";
 import facebook from "next-auth/providers/facebook";
 
 export const {handlers, signIn, signOut, auth} = NextAuth({
-    secret: process.env.AUTH_SECRET,
     pages: {
       signIn: '/signin', 
     },
