@@ -13,7 +13,7 @@ export default async function Home() {
             <Navbar />
             <div className="flex flex-wrap p-6">
                 {getImage.rows.map((image) => (
-                    <div>
+                    <div key={image.id}>
                         <Image src={image.url} alt="Image" width={250} height={250} className="rounded-lg m-5" />
                     </div>
                 ))}
