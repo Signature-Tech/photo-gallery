@@ -78,7 +78,7 @@ export default function form() {
                 </div>
             </form>
             <CardFooter className="flex items-center justify-center">
-                <Link className="text-[12px] hover:underline" href="/signup">Don&apos;t Have An Account ? Sign Up</Link>
+                <Link className="text-[12px] hover:underline" href="/api/auth/signup">Don&apos;t Have An Account ? Sign Up</Link>
             </CardFooter>
           </CardContent>
         </Card>

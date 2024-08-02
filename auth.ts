@@ -7,7 +7,7 @@ import facebook from "next-auth/providers/facebook";
 
 export const {handlers, signIn, signOut, auth} = NextAuth({
     pages: {
-      signIn: '/signin', 
+      signIn: '/api/auth/signin', 
     },
     providers: [discord, facebook, Credentials({
         credentials: {

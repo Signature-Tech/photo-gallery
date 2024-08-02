@@ -26,7 +26,7 @@ export default function form() {
         });
 
         if (response.ok) {
-          window.location.href = "/signin"
+          window.location.href = "/api/auth/signin"
         }
     }
     

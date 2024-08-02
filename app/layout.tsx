@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeWrapper";
 import { Toaster } from "sonner";
+import { EdgeStoreProvider } from "@/lib/edgestore";
 
 const poppins = Poppins({ 
   weight : "600",
@@ -23,10 +24,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          {children}
+          <EdgeStoreProvider>{children}</EdgeStoreProvider>
           <Toaster />
         </ThemeProvider>
       </body>
     </html>
   );
 }
+
