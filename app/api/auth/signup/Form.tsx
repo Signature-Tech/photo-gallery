@@ -16,7 +16,7 @@ export default function form() {
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
-        const response = await fetch("api/auth/register", {
+        const response = await fetch("./register", {
             method: "POST",
             body: JSON.stringify({
                 name: formData.get("name"),
